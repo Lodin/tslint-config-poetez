@@ -1,0 +1,30 @@
+{
+  "name": "tslint-config-poetez",
+  "version": "0.1.0",
+  "description": "A TSLint config for Poetez Project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poetez/tslint-config-poetez.git"
+  },
+  "keywords": [
+    "poetez",
+    "tslint",
+    "typescript"
+  ],
+  "author": "Vlad Rindevich <rindevich.vs@gmail.com> (https://github.com/Lodin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poetez/tslint-config-poetez/issues"
+  },
+  "homepage": "https://github.com/poetez/tslint-config-poetez#readme",
+  "dependencies": {
+    "tslint-eslint-rules": "^4.0.0",
+    "tslint-microsoft-contrib": "git://github.com/Microsoft/tslint-microsoft-contrib.git#releases",
+    "tsutils": "1.6.0",
+    "vrsource-tslint-rules": "^5.1.0"
+  },
+  "peerDependencies": {
+    "tslint": "^5.2.0"
+  }
+}
