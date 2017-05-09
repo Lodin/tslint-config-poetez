@@ -20,6 +20,7 @@ Used all recommended rules from:
 * [vrsource-tslint-rules](https://github.com/vrsource/vrsource-tslint-rules)
 
 With some additional changes: 
+* `completed-docs` is disabled
 * `missing-jsdoc` is disabled
 * `no-default-export` is disabled
 * `no-parameter-properties` is disabled

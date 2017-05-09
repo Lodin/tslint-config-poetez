@@ -6,6 +6,7 @@
     "vrsource-tslint-rules"
   ],
   "rules": {
+    "completed-docs": false,
     "missing-jsdoc": false,
     "no-default-export": false,
     "no-parameter-properties": false,
