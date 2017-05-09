@@ -1,0 +1,26 @@
+ {
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules",
+    "tslint-microsoft-contrib",
+    "vrsource-tslint-rules"
+  ],
+  "rules": {
+    "missing-jsdoc": false,
+    "no-default-export": false,
+    "no-parameter-properties": false,
+    "prefer-array-literal": false,
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "member-variable-declaration"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ]
+  }
+}
