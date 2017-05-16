@@ -28,7 +28,6 @@ With some additional changes:
 * `prefer-array-literal` is disabled
 * `typedef` applies only for: 
   * `call-signature`
-  * `arrow-call-signature`
   * `parameter`
   * `member-variable-declaration`
 * `quotemark` uses single quotes
