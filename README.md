@@ -23,8 +23,9 @@ With some additional changes:
 * `completed-docs` is disabled
 * `missing-jsdoc` is disabled
 * `no-default-export` is disabled
-* `no-unused-expression`: `allow-fast-null-checks` is allowed
 * `no-parameter-properties` is disabled
+* `no-relative-imports` is disabled
+* `no-unused-expression`: `allow-fast-null-checks` is allowed
 * `prefer-array-literal` is disabled
 * `typedef` applies only for: 
   * `call-signature`
