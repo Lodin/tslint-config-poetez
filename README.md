@@ -23,6 +23,7 @@ With some additional changes:
 * `completed-docs` is disabled
 * `missing-jsdoc` is disabled
 * `no-default-export` is disabled
+* `no-import-side-effect`: disabled
 * `no-parameter-properties` is disabled
 * `no-relative-imports` is disabled
 * `no-unused-expression`: `allow-fast-null-checks` is allowed
