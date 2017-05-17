@@ -9,6 +9,7 @@
     "completed-docs": false,
     "missing-jsdoc": false,
     "import-name": false,
+    "interface-name": false,
     "no-default-export": false,
     "no-import-side-effect": false,
     "no-parameter-properties": false,
