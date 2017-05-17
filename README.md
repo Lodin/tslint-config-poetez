@@ -22,6 +22,7 @@ Used all recommended rules from:
 With some additional changes: 
 * `completed-docs` is disabled
 * `missing-jsdoc` is disabled
+* `import-name` is disabled
 * `no-default-export` is disabled
 * `no-import-side-effect`: disabled
 * `no-parameter-properties` is disabled
