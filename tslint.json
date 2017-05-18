@@ -19,8 +19,7 @@
     "typedef": [
       true,
       "call-signature",
-      "parameter",
-      "member-variable-declaration"
+      "parameter"
     ],
     "quotemark": [
       true,

@@ -33,5 +33,4 @@ With some additional changes:
 * `typedef` applies only for: 
   * `call-signature`
   * `parameter`
-  * `member-variable-declaration`
 * `quotemark` uses single quotes
