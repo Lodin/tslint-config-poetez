@@ -24,6 +24,7 @@ With some additional changes:
 * `missing-jsdoc` is disabled
 * `import-name` is disabled
 * `interface-name` is disabled,
+* `no-backbone-get-set-outside-model` is disabled
 * `no-default-export` is disabled
 * `no-import-side-effect`: disabled
 * `no-parameter-properties` is disabled
