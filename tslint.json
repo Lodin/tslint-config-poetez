@@ -10,6 +10,7 @@
     "missing-jsdoc": false,
     "import-name": false,
     "interface-name": false,
+    "mocha-no-side-effect-code": [true, {"ignore": "^xit.*"}],
     "no-backbone-get-set-outside-model": false,
     "no-default-export": false,
     "no-import-side-effect": false,
