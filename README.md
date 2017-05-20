@@ -30,6 +30,7 @@ With some additional changes:
 * `no-parameter-properties` is disabled
 * `no-relative-imports` is disabled
 * `no-unused-expression`: `allow-fast-null-checks` is allowed
+* `strict-boolean-expressions` is disabled
 * `prefer-array-literal` is disabled
 * `typedef` applies only for: 
   * `call-signature`

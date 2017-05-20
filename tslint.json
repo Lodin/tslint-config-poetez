@@ -17,6 +17,7 @@
     "no-relative-imports": false,
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "prefer-array-literal": false,
+    "strict-boolean-expressions": false,
     "typedef": [
       true,
       "call-signature",
