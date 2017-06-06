@@ -33,6 +33,7 @@ With some additional changes:
 * `no-unused-expression`: `allow-fast-null-checks` is allowed
 * `strict-boolean-expressions` is disabled
 * `prefer-array-literal` is disabled
+* `react-tsx-curly-spacing` is set to `never`
 * `typedef` applies only for: 
   * `call-signature`
   * `parameter`
