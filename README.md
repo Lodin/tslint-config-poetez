@@ -3,6 +3,8 @@
 > A [TSLint config](https://palantir.github.io/tslint/usage/tslint-json/)
 for [Poetez Project](https://github.com/poetez)
 
+**Note**: This is an alpha release. Use it at your own risk.
+
 ## Usage
 
 In `tslint.json`:
