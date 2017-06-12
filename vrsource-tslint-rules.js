@@ -1,5 +1,7 @@
+const path = require('path');
+
 module.exports = {
-  rulesDirectory: ['node_modules/vrsource-tslint-rules/rules'],
+  rulesDirectory: [path.resolve(process.cwd(), 'node_modules/vrsource-tslint-rules/rules')],
   rules: {
     'conditional-expression-parens': false,
     'ext-variable-name': false,
