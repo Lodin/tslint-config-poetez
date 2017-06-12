@@ -1,6 +1,11 @@
+const tmc = require('./tslint-microsoft-contrib-recommended');
+
 module.exports = {
   extend: ['tslint:recommended', "tslint-eslint-rules"],
-  rules: Object.assign({}, require('./tslint-microsoft-contrib-recommended'), {
+  rulesDirectory: [
+    ...tmc.rulesDirectory,
+  ],
+  rules: Object.assign({}, tmc.rules, {
     "completed-docs": false,
     "missing-jsdoc": false,
     "import-name": false,
