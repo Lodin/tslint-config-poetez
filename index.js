@@ -19,6 +19,7 @@ module.exports = {
     "no-parameter-properties": false,
     "no-relative-imports": false,
     "no-unused-expression": [true, "allow-fast-null-checks"],
+    "ordered-imports": true,
     "prefer-array-literal": false,
     "react-tsx-curly-spacing": [true, "never"],
     "strict-boolean-expressions": false,
@@ -30,6 +31,8 @@ module.exports = {
     "quotemark": [
       true,
       "single",
+      "jsx-double",
+      "avoid-template",
       "avoid-escape"
     ]
   }),
