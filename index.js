@@ -1,13 +1,15 @@
+const ter = require('./tslint-eslint-rules');
 const tmc = require('./tslint-microsoft-contrib-recommended');
 const vtr = require('./vrsource-tslint-rules');
 
 module.exports = {
   extends: ['tslint:recommended', 'tslint-eslint-rules'],
   rulesDirectory: [
+    ...ter.rulesDirectory,
     ...tmc.rulesDirectory,
     ...vtr.rulesDirectory
   ],
-  rules: Object.assign({}, tmc.rules, vtr.rules, {
+  rules: Object.assign({}, ter.rules, tmc.rules, vtr.rules, {
     'completed-docs': false,
     'missing-jsdoc': false,
     'import-name': false,
