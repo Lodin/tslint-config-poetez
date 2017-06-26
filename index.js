@@ -25,6 +25,7 @@ module.exports = {
     'no-unused-expression': [true, 'allow-fast-null-checks'],
     'ordered-imports': true,
     'prefer-array-literal': false,
+    'prefer-type-cast': false,
     'react-tsx-curly-spacing': [true, 'never'],
     'strict-boolean-expressions': false,
     'typedef': [
