@@ -2,7 +2,7 @@ const tmc = require('./tslint-microsoft-contrib-recommended');
 const vtr = require('./vrsource-tslint-rules');
 
 module.exports = {
-  extend: ['tslint:recommended', "tslint-eslint-rules"],
+  extends: ['tslint:recommended', "tslint-eslint-rules"],
   rulesDirectory: [
     ...tmc.rulesDirectory,
     ...vtr.rulesDirectory
