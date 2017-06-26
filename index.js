@@ -14,6 +14,7 @@ module.exports = {
     'missing-jsdoc': false,
     'import-name': false,
     'interface-name': false,
+    'max-line-length': [true, 140],
     'mocha-no-side-effect-code': [true, {'ignore': '^xit.*'}],
     'no-backbone-get-set-outside-model': false,
     'no-default-export': false,
