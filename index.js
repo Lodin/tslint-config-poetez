@@ -10,6 +10,7 @@ module.exports = {
     ...vtr.rulesDirectory
   ],
   rules: Object.assign({}, ter.rules, tmc.rules, vtr.rules, {
+    'arrow-parens': false,
     'completed-docs': false,
     'missing-jsdoc': false,
     'import-name': false,
