@@ -35,20 +35,20 @@ module.exports = {
     'mocha-avoid-only': true,
     'mocha-no-side-effect-code': true,
     'no-backbone-get-set-outside-model': true,
-    'no-constant-condition': true,
-    'no-control-regex': true,
-    'no-duplicate-case': true,
+    // 'no-constant-condition': true,  // exists in TER
+    // 'no-control-regex': true,  // exists in TER
+    // 'no-duplicate-case': true,  // exists in TER
     'no-duplicate-variable': true,
     'no-floating-promises': true,
     'no-for-in-array': true,
     'no-import-side-effect': true,
     'no-increment-decrement': true,
-    'no-invalid-regexp': true,
+    // 'no-invalid-regexp': true, // exists in TER
     'no-invalid-template-strings': true,
     'no-jquery-raw-elements': true,
     'no-non-null-assertion': true,
-    'no-regex-spaces': true,
-    'no-sparse-arrays': true,
+    // 'no-regex-spaces': true, // exists in TER
+    // 'no-sparse-arrays': true, // exists in TER
     'no-stateless-class': true,
     'no-unnecessary-bind': true,
     'no-unnecessary-callback-wrapper': true,
@@ -60,7 +60,6 @@ module.exports = {
     'react-this-binding-issue': true,
     'react-unused-props-and-state': true,
     'restrict-plus-operands': true, // the plus operand should really only be used for strings and numbers
-    'strict-boolean-expressions': true,
     'switch-default': true,
     'use-named-parameter': true,
     'valid-typeof': true,
@@ -71,7 +70,6 @@ module.exports = {
      */
     'chai-prefer-contains-to-index-of': true,
     'chai-vague-errors': true,
-    'completed-docs': [true, 'classes'],
     'export-name': true,
     'function-name': true,
     'import-name': true,
@@ -79,7 +77,6 @@ module.exports = {
     'max-func-body-length': [true, 100, {'ignore-parameters-to-function-regex': 'describe'}],
     'missing-jsdoc': true,
     'mocha-unneeded-done': true,
-    'no-default-export': true,
     'no-for-in': true,
     'no-function-expression': true,
     'no-inferrable-types': false, // turn no-inferrable-types off in order to make the code consistent in its use of type decorations
