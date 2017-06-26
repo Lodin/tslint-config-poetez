@@ -29,9 +29,9 @@ module.exports = {
     'block-spacing': [true, 'always'],
     'brace-style': [true, '1tbs'],
     'ter-indent': [true, 2, {SwitchCase: 1}],
-    'ter-max-len': [true, 140],
+    'ter-max-len': false, // tslint "max-line-length"
     'object-curly-spacing': [true, 'never'],
-    'sort-imports': false, // there already is tslint rule 'ordered-imports'
+    'sort-imports': false, // tslint 'ordered-imports'
     'space-in-parens': [true, 'never'],
 
     // ECMAScript 6
