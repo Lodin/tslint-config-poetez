@@ -17,11 +17,11 @@ module.exports = {
     'no-duplicate-imports': true,
     'no-jasmine-focus': true,
     'no-param-reassign': true,
-    "prefer-case-blocks": false,
-    "prefer-literal": [
+    'prefer-case-blocks': false,
+    'prefer-literal': [
       true,
-      "object",
-      "function"
+      'object',
+      'function'
     ]
   }
 };
