@@ -22,6 +22,7 @@ module.exports = {
     'no-import-side-effect': false,
     'no-parameter-properties': false,
     'no-relative-imports': false,
+    'no-reserved-keywords': false,
     'no-unused-expression': [true, 'allow-fast-null-checks'],
     'ordered-imports': true,
     'prefer-array-literal': false,
