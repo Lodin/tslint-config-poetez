@@ -28,19 +28,19 @@ module.exports = {
     'ordered-imports': true,
     'prefer-array-literal': false,
     'prefer-type-cast': false,
-    'react-tsx-curly-spacing': [true, 'never', {allowMultiline: true}],
-    'strict-boolean-expressions': false,
-    'typedef': [
-      true,
-      'call-signature',
-      'parameter'
-    ],
     'quotemark': [
       true,
       'single',
       'jsx-double',
       'avoid-template',
       'avoid-escape'
+    ],
+    'react-tsx-curly-spacing': [true, 'never', {allowMultiline: true}],
+    'strict-boolean-expressions': false,
+    'typedef': [
+      true,
+      'call-signature',
+      'parameter'
     ],
     'variable-name': [true, "ban-keywords", "check-format", "allow-leading-underscore"]
   }),
