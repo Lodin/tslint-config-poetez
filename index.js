@@ -41,6 +41,7 @@ module.exports = {
       'jsx-double',
       'avoid-template',
       'avoid-escape'
-    ]
+    ],
+    'variable-name': [true, "ban-keywords", "check-format", "allow-leading-underscore"]
   }),
 };
