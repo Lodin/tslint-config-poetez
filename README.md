@@ -48,3 +48,4 @@ With some additional changes:
   * `parameter`
 * `variable-name` allows to use leading underscore.
 * `export-name` is disabled,
+* `no-unsafe-any` is disabled
