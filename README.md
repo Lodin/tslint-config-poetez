@@ -47,3 +47,4 @@ With some additional changes:
   * `call-signature`
   * `parameter`
 * `variable-name` allows to use leading underscore.
+* `export-name` is disabled,
