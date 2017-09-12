@@ -42,7 +42,13 @@ module.exports = {
       'call-signature',
       'parameter'
     ],
-    'variable-name': [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+    'variable-name': [
+      true,
+      'ban-keywords',
+      'check-format',
+      'allow-pascal-case',
+      'allow-leading-underscore'
+    ],
     'export-name': false,
     'no-unsafe-any': false,
   }),

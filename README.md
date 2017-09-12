@@ -46,6 +46,6 @@ With some additional changes:
 * `typedef` applies only for: 
   * `call-signature`
   * `parameter`
-* `variable-name` allows to use leading underscore.
+* `variable-name` allows to use leading underscore and Pascal naming style.
 * `export-name` is disabled,
 * `no-unsafe-any` is disabled
