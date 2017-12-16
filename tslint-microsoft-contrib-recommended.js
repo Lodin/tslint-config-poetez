@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  rulesDirectory: [path.resolve(process.cwd(), 'node_modules/tslint-microsoft-contrib')],
+  rulesDirectory: [path.dirname(require.resolve('tslint-microsoft-contrib'))],
   rules: {
     'insecure-random': true,
     'no-banned-terms': true,

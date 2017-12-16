@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  rulesDirectory: [path.resolve(process.cwd(), 'node_modules/tslint-eslint-rules/dist/rules')],
+  rulesDirectory: [path.resolve(
+    path.dirname(require.resolve('tslint-eslint-rules')),
+    'dist/rules',
+  )],
   rules: {
     // Possible Errors
     'no-constant-condition': true,
