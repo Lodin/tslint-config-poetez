@@ -9,6 +9,6 @@ const configuration = [
 ];
 
 module.exports = {
-  rulesDirectory: configuration.map(c => c.rulesDirectory),
+  rulesDirectory: configuration.filter(c => !!c.rulesDirectory).map(c => c.rulesDirectory),
   rules: Object.assign.apply(null, configuration.map(c => c.rules).reverse()),
 };
