@@ -64,10 +64,8 @@ const stylisticIssues = {
   'ter-indent': false,
   // handled by "max-line-length" rule of tslint core
   'ter-max-len': false,
-  'ter-newline-after-var': [
-    true,
-    'never',
-  ],
+  // may interfere with the developer experience
+  'ter-newline-after-var': false,
   // handled by "indent" rule of tslint core
   'ter-no-mixed-spaces-and-tabs': false,
   'object-curly-spacing': [

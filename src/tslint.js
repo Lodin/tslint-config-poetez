@@ -245,14 +245,8 @@ const maintainability = {
 };
 
 const style = {
-  'align': [
-    true,
-    'arguments',
-    'elements',
-    'members',
-    'parameters',
-    'statements',
-  ],
+  // may interfere with the developer experience
+  'align': false,
   'array-type': [
     true,
     'array-simple',
@@ -324,12 +318,7 @@ const style = {
     true,
     'ignore-for-loop',
   ],
-  'ordered-imports': [
-    true,
-    {
-      'grouped-imports': true,
-    }
-  ],
+  'ordered-imports': true,
   'prefer-function-over-method': [
     true,
     'allow-public',
@@ -374,7 +363,6 @@ const style = {
     'check-branch',
     'check-decl',
     'check-operator',
-    'check-module',
     'check-separator',
     'check-rest-spread',
     'check-type',

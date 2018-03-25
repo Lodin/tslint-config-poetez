@@ -5,7 +5,8 @@ const immutability = {
   'readonly-array': [true, 'ignore-local'],
   // Since there can be not only functional programming, it is not necessary
   'no-let': false,
-  'no-object-mutation': true,
+  // also forbids changing "this", which is inappropriate
+  'no-object-mutation': false,
   'no-method-signature': true,
   'no-delete': true,
 };
