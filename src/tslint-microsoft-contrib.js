@@ -13,7 +13,8 @@ const rules = {
   'no-octal-literal': true,
   // relative imports are defined in spec
   'no-relative-imports': false,
-  'no-reserved-keywords': true,
+  // handled by "variable-name" rule of tslint core
+  'no-reserved-keywords': false,
   'no-single-line-block-comment': true,
   'no-string-based-set-immediate': true,
   'no-string-based-set-interval': true,
@@ -32,7 +33,8 @@ const rules = {
   'no-unnecessary-semicolons': false,
   'no-with-statement': true,
   'non-literal-require': true,
-  'prefer-array-literal': true,
+  // disallows creating arrays with predefined length, which can affect performance
+  'prefer-array-literal': false,
   'react-a11y-anchors': true,
   'react-a11y-aria-unsupported-elements': true,
   'react-a11y-event-has-role': true,

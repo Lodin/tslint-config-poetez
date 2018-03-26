@@ -50,7 +50,14 @@ const typescriptSpecific = {
     'ignore-properties',
   ],
   'no-internal-module': true,
-  'no-magic-numbers': true,
+  'no-magic-numbers': [
+    true,
+    -1,
+    0,
+    1,
+    2,
+    3,
+  ],
   'no-namespace': [
     true,
     'allow-declarations',
@@ -152,7 +159,10 @@ const functionality = {
       'allow-destructuring': true,
     }
   ],
-  'no-unbound-method': true,
+  'no-unbound-method': [
+    true,
+    'ignore-static',
+  ],
   'no-unnecessary-class': true,
   'no-unsafe-any': true,
   'no-unsafe-finally': true,
@@ -185,7 +195,8 @@ const functionality = {
   'strict-type-predicates': true,
   'switch-default': true,
   'triple-equals': true,
-  'typeof-compare': true,
+  // deprecated by tslint
+  'typeof-compare': false,
   'use-default-type-parameter': true,
   'use-isnan': true,
 };
@@ -262,13 +273,7 @@ const style = {
   'class-name': true,
   'comment-format': [
     true,
-    'check-lowercase',
-    {
-      'ignore-words': [
-        'TODO',
-        'HACK'
-      ]
-    }
+    'check-space',
   ],
   'completed-docs': false,
   'encoding': true,
@@ -287,7 +292,8 @@ const style = {
   // default export is designed to be renamed
   'match-default-export-name': false,
   'newline-before-return': true,
-  'newline-per-chained-call': true,
+  // may interfere with the developer experience
+  'newline-per-chained-call': false,
   'new-parens': true,
   'no-angle-bracket-type-assertion': true,
   'no-boolean-literal-compare': true,
@@ -326,7 +332,8 @@ const style = {
   ],
   // it's better to do vice versa
   'prefer-method-signature': false,
-  'prefer-switch': true,
+  // produces more code than a simple "if"
+  'prefer-switch': false,
   'prefer-template': true,
   'quotemark': [
     true,
@@ -353,7 +360,10 @@ const style = {
     true,
     0,
   ],
-  'switch-final-break': true,
+  'switch-final-break': [
+    true,
+    'always',
+  ],
   // type-literal delimiter should be comma, not semicolon
   'type-literal-delimiter': false,
   // handled by tslint-consistent-codestyle

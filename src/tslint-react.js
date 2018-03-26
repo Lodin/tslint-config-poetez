@@ -28,7 +28,8 @@ const rules = {
   // may interfere with the developer experience
   'jsx-use-translation-function': false,
   'jsx-self-close': true,
-  'jsx-wrap-multiline': true,
+  // produces false positives
+  'jsx-wrap-multiline': false,
 };
 
 module.exports = {

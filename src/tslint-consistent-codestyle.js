@@ -3,12 +3,8 @@ const path = require('path');
 const rules = {
   // declaring it with JSDoc is too verbose
   'const-parameters': false,
-  'early-exit': [
-    true,
-    {
-      'max-length': 4
-    },
-  ],
+  // may interfere with the developer experience
+  'early-exit': false,
   // handled by "curly" rule of tslint core
   'ext-curly': false,
   'naming-convention': [
@@ -19,7 +15,7 @@ const rules = {
     {type: 'member', modifiers: 'private', 'format': null, leadingUnderscore: 'require', regex: '^__[a-zA-Z]+$'},
     {type: 'member', modifiers: 'protected', leadingUnderscore: 'require'},
     {type: 'type', format: 'PascalCase'},
-    {type: 'genericTypeParameter', regex: '^[TUVEMN]$'},
+    {type: 'genericTypeParameter', regex: "^(?:[A-Z]|T[a-zA-Z]+)$"},
     {type: 'enumMember', format: 'PascalCase'}
   ],
   // handled by "no-angle-bracket-type-assertion" rule of tslint core
