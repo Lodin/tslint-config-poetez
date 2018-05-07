@@ -9,7 +9,8 @@ const rules = {
   'no-function-constructor-with-string-args': true,
   'no-increment-decrement': true,
   'no-inner-html': true,
-  'no-multiline-string': true,
+  // forbids multiline even for template literal
+  'no-multiline-string': false,
   'no-octal-literal': true,
   // relative imports are defined in spec
   'no-relative-imports': false,
