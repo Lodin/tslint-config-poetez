@@ -11,11 +11,14 @@ const rules = {
     true,
     {type: 'default', format: 'camelCase', leadingUnderscore: 'forbid', trailingUnderscore: 'forbid'},
     {type: 'variable', modifiers: ['global', 'const'], format: ['camelCase', 'UPPER_CASE']},
+    {type: 'variable', modifiers: ['local'], format: null, leadingUnderscore: 'allow', regex: '^(?:_{1,2})?[a-z][a-zA-Z]*$'},
+    // allows using PascalCase for decorators
+    {type: 'functionVariable', modifiers: ['const'], format: ['camelCase', 'PascalCase']},
     {type: 'parameter', modifiers: 'unused', leadingUnderscore: 'require'},
     {type: 'member', modifiers: 'private', 'format': null, leadingUnderscore: 'require', regex: '^__[a-zA-Z]+$'},
     {type: 'member', modifiers: 'protected', leadingUnderscore: 'require'},
     {type: 'type', format: 'PascalCase'},
-    {type: 'genericTypeParameter', regex: "^(?:[A-Z]|T[a-zA-Z]+)$"},
+    {type: 'genericTypeParameter', regex: '^(?:[A-Z]|T[a-zA-Z]+)$'},
     {type: 'enumMember', format: 'PascalCase'}
   ],
   // handled by "no-angle-bracket-type-assertion" rule of tslint core
