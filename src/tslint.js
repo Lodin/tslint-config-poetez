@@ -21,10 +21,10 @@ const typescriptSpecific = {
     {
       order: [
         'public-static-field',
-        'public-static-method',
         'protected-static-field',
-        'protected-static-method',
         'private-static-field',
+        'public-static-method',
+        'protected-static-method',
         'private-static-method',
         'public-instance-field',
         'protected-instance-field',
