@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-poetez",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A TSLint config for Poetez Project",
   "main": "src/index.js",
   "repository": {
@@ -25,7 +25,7 @@
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-misc-rules": "^3.3.2",
     "tslint-react": "^3.5.1",
-    "tsutils": "2.22.2"
+    "tsutils": "^2.27.1"
   },
   "peerDependencies": {
     "tslint": "^5.9.1"
