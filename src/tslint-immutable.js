@@ -7,7 +7,8 @@ const immutability = {
   'no-let': false,
   // also forbids changing "this", which is inappropriate
   'no-object-mutation': false,
-  'no-method-signature': true,
+   // implementable interfaces should have method signature, not property
+  'no-method-signature': false,
   'no-delete': true,
 };
 

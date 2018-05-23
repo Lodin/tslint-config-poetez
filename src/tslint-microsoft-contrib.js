@@ -16,7 +16,8 @@ const rules = {
   'no-relative-imports': false,
   // handled by "variable-name" rule of tslint core
   'no-reserved-keywords': false,
-  'no-single-line-block-comment': true,
+  // time to time they are very necessary
+  'no-single-line-block-comment': false,
   'no-string-based-set-immediate': true,
   'no-string-based-set-interval': true,
   'no-string-based-set-timeout': true,

@@ -50,14 +50,8 @@ const typescriptSpecific = {
     'ignore-properties',
   ],
   'no-internal-module': true,
-  'no-magic-numbers': [
-    true,
-    -1,
-    0,
-    1,
-    2,
-    3,
-  ],
+  // not well-designed rule which irritates developer
+  'no-magic-numbers': false,
   'no-namespace': [
     true,
     'allow-declarations',
@@ -164,7 +158,8 @@ const functionality = {
     'ignore-static',
   ],
   'no-unnecessary-class': true,
-  'no-unsafe-any': true,
+  // this rule hard to be applied due to typescript features
+  'no-unsafe-any': false,
   'no-unsafe-finally': true,
   'no-unused-expression': [
     true,
