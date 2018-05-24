@@ -24,8 +24,7 @@
     "tslint-immutable": "^4.5.2",
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-misc-rules": "^3.3.2",
-    "tslint-react": "^3.5.1",
-    "tsutils": "^2.27.1"
+    "tslint-react": "^3.5.1"
   },
   "peerDependencies": {
     "tslint": "^5.9.1"
