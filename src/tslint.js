@@ -247,8 +247,8 @@ const maintainability = {
         typeLiterals: 'never'
       },
       esSpecCompliant: true,
-    }
-  ]
+    },
+  ],
 };
 
 const style = {
