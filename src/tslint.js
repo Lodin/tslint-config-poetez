@@ -246,6 +246,7 @@ const maintainability = {
         functions: 'never',
         typeLiterals: 'never'
       },
+      esSpecCompliant: true,
     }
   ]
 };
