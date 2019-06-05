@@ -103,6 +103,7 @@ const functionality = {
   'curly': true,
   // forin is fastest approach to loop through the object's keys
   'forin': false,
+  'function-constructor': true,
   'import-blacklist': [
     true,
     'lodash',

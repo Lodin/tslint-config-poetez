@@ -6,7 +6,8 @@ const rules = {
   'no-document-domain': true,
   'no-document-write': true,
   'no-exec-script': true,
-  'no-function-constructor-with-string-args': true,
+  // deprecated and handled by "function-constructor" rule of tslint
+  'no-function-constructor-with-string-args': false,
   // deprecated and handled by "increment-decrement" rule of tslint
   'no-increment-decrement': false,
   'no-inner-html': true,
