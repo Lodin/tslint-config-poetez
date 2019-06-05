@@ -1,5 +1,7 @@
 const typescriptSpecific = {
   'adjacent-overload-signatures': true,
+  // ts-ignore is an important part of working with Typescript
+  'ban-ts-ignore': false,
   'ban-types': [
     true,
     [
@@ -121,8 +123,11 @@ const functionality = {
   // "var" keyword is banned anyway
   'no-duplicate-variable': false,
   'no-dynamic-delete': true,
-  // should allow noop functions
-  'no-empty': false,
+  'no-empty': [
+    true,
+    'allow-empty-catch',
+    'allow-empty-functions',
+  ],
   // handled by "no-banned-terms" rule of tslint-microsoft-contrib
   'no-eval': false,
   // often shows false positives
@@ -135,7 +140,7 @@ const functionality = {
   'no-misused-new': true,
   // null is often used by third-part libraries
   'no-null-keyword': false,
-  'no-object-literal-type-assertion': true,
+  'no-object-literal-type-assertion': [true, {"allow-arguments": true}],
   'no-return-await': true,
   'no-shadowed-variable': true,
   'no-sparse-arrays': true,
@@ -184,6 +189,7 @@ const functionality = {
   'triple-equals': true,
   // deprecated by tslint
   'typeof-compare': false,
+  'unnecessary-constructor': true,
   'use-default-type-parameter': true,
   'use-isnan': true,
 };
@@ -213,16 +219,18 @@ const maintainability = {
   ],
   // default exports are usable for single class declarations, etc.
   'no-default-export': false,
+  // same reason as "no-default-export" rule
+  'no-default-import': false,
   'no-duplicate-imports': true,
   'no-mergeable-namespace': true,
   'no-require-imports': true,
   'object-literal-sort-keys': [
     true,
     'ignore-case',
+    'match-declaration-order',
   ],
   'prefer-const': true,
-  // handled by tslint-immutable
-  'prefer-readonly': false,
+  'prefer-readonly': true,
   'trailing-comma': [
     true,
     {
@@ -263,9 +271,16 @@ const style = {
     true,
     'check-space',
   ],
+  'comment-type': [
+    true,
+    'singleline',
+    'multiline',
+    'doc',
+  ],
   'completed-docs': false,
   'encoding': true,
   'file-header': false,
+  'file-name-casing': [true, {'.tsx': 'pascal-case', '.*': 'camel-case'}],
   'import-spacing': true,
   'increment-decrement': true,
   // it's better to create a proper name for interface than use I-notation
@@ -292,6 +307,7 @@ const style = {
   'no-parameter-properties': false,
   'no-redundant-jsdoc': true,
   'no-reference-import': true,
+  'no-tautology-expression': true,
   'no-trailing-whitespace': true,
   'no-unnecessary-initializer': true,
   'no-unnecessary-qualifier': true,
@@ -324,6 +340,7 @@ const style = {
   // produces more code than a simple "if"
   'prefer-switch': false,
   'prefer-template': true,
+  'prefer-while': true,
   'quotemark': [
     true,
     'single',
@@ -349,12 +366,14 @@ const style = {
     true,
     0,
   ],
+  'static-this': true,
   'switch-final-break': [
     true,
     'always',
   ],
   // type-literal delimiter should be comma, not semicolon
   'type-literal-delimiter': false,
+  'unnecessary-bind': true,
   'unnecessary-else': [true, {'allow-else-if': true}],
   // handled by tslint-consistent-codestyle
   'variable-name': false,
