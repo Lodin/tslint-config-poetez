@@ -280,7 +280,8 @@ const style = {
   'completed-docs': false,
   'encoding': true,
   'file-header': false,
-  'file-name-casing': [true, {'.tsx': 'pascal-case', '.*': 'camel-case'}],
+  // disabled by default, but you can enable it locally if you would like
+  'file-name-casing': false,
   'import-spacing': true,
   'increment-decrement': true,
   // it's better to create a proper name for interface than use I-notation
