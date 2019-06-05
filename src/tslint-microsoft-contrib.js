@@ -7,9 +7,8 @@ const rules = {
   'no-document-write': true,
   'no-exec-script': true,
   'no-function-constructor-with-string-args': true,
-  // preferred over tslint "increment-decrement" rule because it allows
-  // increment-decrement for loops
-  'no-increment-decrement': [true, "allow-for-loop"],
+  // deprecated and handled by "increment-decrement" rule of tslint
+  'no-increment-decrement': false,
   'no-inner-html': true,
   // forbids multiline even for template literal
   'no-multiline-string': false,

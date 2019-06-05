@@ -266,8 +266,7 @@ const style = {
   'encoding': true,
   'file-header': false,
   'import-spacing': true,
-  // handled by "no-increment-decrement" rule of "tslint-microsoft-contrib"
-  'increment-decrement': false,
+  'increment-decrement': true,
   // it's better to create a proper name for interface than use I-notation
   'interface-name': [
     true,
