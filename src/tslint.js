@@ -355,6 +355,7 @@ const style = {
   ],
   // type-literal delimiter should be comma, not semicolon
   'type-literal-delimiter': false,
+  'unnecessary-else': [true, {'allow-else-if': true}],
   // handled by tslint-consistent-codestyle
   'variable-name': false,
   'whitespace': [

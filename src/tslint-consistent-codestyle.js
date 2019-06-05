@@ -31,7 +31,8 @@ const rules = {
   'no-return-undefined': false,
   // "this" refers to a class constructor, so it is actual to call other static functions
   'no-static-this': false,
-  'no-unnecessary-else': true,
+  // handled by "unnecessary-else" rule of tslint core
+  'no-unnecessary-else': false,
   // can conflict with "typedef" rule of tslint core
   'no-unnecessary-type-annotation': false,
   // handle by "no-unused-variable" of tslint core
