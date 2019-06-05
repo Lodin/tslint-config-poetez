@@ -99,15 +99,10 @@ const typescriptSpecific = {
 const functionality = {
   'await-promise': true,
   'ban-comma-operator': true,
-  'ban': [
-    true,
-    {
-      name: ['*', 'forEach'],
-      message: 'Use a regular for loop instead.',
-    }
-  ],
+  'ban': false,
   'curly': true,
-  'forin': true,
+  // forin is fastest approach to loop through the object's keys
+  'forin': false,
   'import-blacklist': [
     true,
     'lodash',
@@ -125,17 +120,19 @@ const functionality = {
   // "var" keyword is banned anyway
   'no-duplicate-variable': false,
   'no-dynamic-delete': true,
-  'no-empty': true,
+  // should allow noop functions
+  'no-empty': false,
   // handled by "no-banned-terms" rule of tslint-microsoft-contrib
   'no-eval': false,
-  'no-floating-promises': true,
+  // often shows false positives
+  'no-floating-promises': false,
   'no-for-in-array': true,
-  'no-implicit-dependencies': true,
+  'no-implicit-dependencies': [true, "dev", "optional"],
   'no-inferred-empty-object-type': true,
   'no-invalid-template-strings': true,
   'no-invalid-this': true,
   'no-misused-new': true,
-  // Null is often used by third-part libraries
+  // null is often used by third-part libraries
   'no-null-keyword': false,
   'no-object-literal-type-assertion': true,
   'no-return-await': true,
@@ -143,9 +140,9 @@ const functionality = {
   'no-sparse-arrays': true,
   'no-string-literal': true,
   'no-string-throw': true,
-  // Submodule are widely used by third-part libraries
+  // submodule are widely used by third-part libraries
   'no-submodule-imports': false,
-  // Requires disabling "--noFallthroughCasesInSwitch" flag in tsc
+  // requires disabling "--noFallthroughCasesInSwitch" flag in tsc
   'no-switch-case-fall-through': true,
   'no-this-assignment': [
     true,
@@ -165,14 +162,8 @@ const functionality = {
     true,
     'allow-fast-null-checks',
   ],
-  // requires disabling "--noUnusedParameters" and "--noUnusedLocals" flags in tsc
-  'no-unused-variable': [
-    true,
-    'check-parameters',
-    {
-      'ignore-pattern': '^_',
-    }
-  ],
+  // deprecated
+  'no-unused-variable': false,
   // legacy rule
   'no-use-before-declare': false,
   'no-var-keyword': true,
@@ -275,6 +266,8 @@ const style = {
   'encoding': true,
   'file-header': false,
   'import-spacing': true,
+  // handled by "no-increment-decrement" rule of "tslint-microsoft-contrib"
+  'increment-decrement': false,
   // it's better to create a proper name for interface than use I-notation
   'interface-name': [
     true,

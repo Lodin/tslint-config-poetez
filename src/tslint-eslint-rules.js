@@ -72,10 +72,8 @@ const stylisticIssues = {
     true,
     'never',
   ],
-  'ter-padded-blocks': [
-    true,
-    'never'
-  ],
+  // shows false positives
+  'ter-padded-blocks': false,
   // handled by "import-ordering" rule of tslint core
   'sort-imports': false,
   // handled by "space-within-parens" rule of tslint core
