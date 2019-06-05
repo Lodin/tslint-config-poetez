@@ -6,9 +6,9 @@ const rules = {
   'no-document-domain': true,
   'no-document-write': true,
   'no-exec-script': true,
-  // deprecated and handled by "function-constructor" rule of tslint
+  // deprecated and handled by "function-constructor" rule of tslint core
   'no-function-constructor-with-string-args': false,
-  // deprecated and handled by "increment-decrement" rule of tslint
+  // deprecated and handled by "increment-decrement" rule of tslint core
   'no-increment-decrement': false,
   'no-inner-html': true,
   // forbids multiline even for template literal
